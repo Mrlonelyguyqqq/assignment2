@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Button</title>
+</head>
+<body>
+    <button id="counterButton">Click me: 0</button>
+    <script>
+        let counter = 0;
+        const button = document.getElementById('counterButton');
+        button.addEventListener('click', () => {
+            counter++; 
+            button.textContent = `Click me: ${counter}`;
+        });
+    </script>
+</body>
+</html>

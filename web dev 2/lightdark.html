@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Button</title>
+</head>
+
+<body>
+    <button id="toggleThemeBtn">Switch to Dark Mode</button>
+
+    <script>
+        let isDark = false;
+        const button = document.getElementById('toggleThemeBtn');
+
+        button.addEventListener('click', () => {
+            document.body.style.backgroundColor = isDark ? 'white' : 'black';
+            document.body.style.color = isDark ? 'black' : 'white';
+            isDark = !isDark;
+        })
+        </script>
+        
+</body>
+</html>
